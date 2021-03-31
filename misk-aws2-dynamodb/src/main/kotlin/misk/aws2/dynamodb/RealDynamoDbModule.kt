@@ -1,6 +1,7 @@
 package misk.aws2.dynamodb
 
 import com.google.inject.Provides
+import misk.exceptions.dynamodb.DynamoDbExceptionMapperModule
 import misk.cloud.aws.AwsRegion
 import misk.inject.KAbstractModule
 import software.amazon.awssdk.auth.credentials.AwsCredentialsProvider
@@ -19,6 +20,7 @@ class RealDynamoDbModule constructor(
   override fun configure() {
     requireBinding<AwsCredentialsProvider>()
     requireBinding<AwsRegion>()
+    install(DynamoDbExceptionMapperModule())
   }
 
   @Provides @Singleton

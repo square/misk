@@ -1,10 +1,15 @@
 dependencies {
-  api dep.aws2Dynamodb
-  api project(':misk-exceptions-dynamodb')
+  api dep.awsDynamodb
 
   implementation dep.guice
+  implementation dep.okHttp
+  implementation project(':misk')
+  implementation project(':misk-actions')
   implementation project(':misk-aws')
+  implementation project(':misk-core')
   implementation project(':misk-inject')
+
+  testImplementation project(':misk-testing')
 }
 
 afterEvaluate { project ->

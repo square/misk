@@ -7,6 +7,7 @@ import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClientBuilder
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBStreams
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBStreamsClientBuilder
 import com.google.inject.Provides
+import misk.exceptions.dynamodb.DynamoDbExceptionMapperModule
 import misk.cloud.aws.AwsRegion
 import misk.inject.KAbstractModule
 import javax.inject.Singleton
@@ -22,6 +23,7 @@ class RealDynamoDbModule constructor(
   override fun configure() {
     requireBinding<AWSCredentialsProvider>()
     requireBinding<AwsRegion>()
+    install(DynamoDbExceptionMapperModule())
   }
 
   @Provides @Singleton
