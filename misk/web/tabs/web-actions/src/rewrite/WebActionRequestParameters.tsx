@@ -1,15 +1,18 @@
 import React from "react"
 import { HTMLTable, UL } from "@blueprintjs/core"
-import { WebActionMetadata} from "./types"
+import { WebActionMetadata } from "./types"
 import WebActionParameter from "./WebActionParameter"
 import WebActionCollapse from "./WebActionCollapse"
 import WebActionProtoField from "./WebActionProtoField"
+import LinkToProtoDoc from "./LinkToProtoDoc"
 
 interface Props {
   webActionMetadata: WebActionMetadata
 }
 
-export default function WebActionRequestParameters({ webActionMetadata }: Props) {
+export default function WebActionRequestParameters({
+  webActionMetadata
+}: Props) {
   const requestType = webActionMetadata.types[webActionMetadata.requestType]
   const parameters = webActionMetadata.parameters
 
@@ -23,9 +26,11 @@ export default function WebActionRequestParameters({ webActionMetadata }: Props)
         <WebActionCollapse
           title={"Request Parameters"}
           subtitle={webActionMetadata.requestType}
-          doubleWidth={true}>
+          doubleWidth={true}
+        >
           <UL style={{ listStyle: "none" }}>
             <li>
+              <LinkToProtoDoc protoClass={webActionMetadata.requestType} />
               <HTMLTable style={{ marginBottom: "0px" }}>
                 {requestType.fields.map(field => (
                   <WebActionProtoField field={field} />
