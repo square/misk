@@ -1,0 +1,12 @@
+$dokka.format:gfm
+$dokka.linkExtension:md
+$dokka.location:misk.feature$getEnum(wisp.feature.DynamicConfig, wisp.feature.Feature)misk.feature/wisp.feature.-dynamic-config/get-enum.md
+$dokka.location:misk.feature$getEnum(wisp.feature.FeatureFlags, wisp.feature.Feature, kotlin.String, wisp.feature.Attributes)misk.feature/wisp.feature.-feature-flags/get-enum.md
+$dokka.location:misk.feature$getJson(wisp.feature.DynamicConfig, wisp.feature.Feature)misk.feature/wisp.feature.-dynamic-config/get-json.md
+$dokka.location:misk.feature$getJson(wisp.feature.FeatureFlags, wisp.feature.Feature, kotlin.String, wisp.feature.Attributes)misk.feature/wisp.feature.-feature-flags/get-json.md
+$dokka.location:misk.feature$toMisk(wisp.feature.TrackerReference)misk.feature/wisp.feature.-tracker-reference/to-misk.md
+$dokka.location:misk.feature$trackEnum(wisp.feature.DynamicConfig, wisp.feature.Feature, java.util.concurrent.Executor, kotlin.Function1((misk.feature.trackEnum.T, kotlin.Unit)))misk.feature/wisp.feature.-dynamic-config/track-enum.md
+$dokka.location:misk.feature$trackEnum(wisp.feature.FeatureFlags, wisp.feature.Feature, kotlin.String, wisp.feature.Attributes, java.util.concurrent.Executor, kotlin.Function1((misk.feature.trackEnum.T, kotlin.Unit)))misk.feature/wisp.feature.-feature-flags/track-enum.md
+$dokka.location:misk.feature$trackJson(wisp.feature.DynamicConfig, wisp.feature.Feature, java.util.concurrent.Executor, kotlin.Function1((misk.feature.trackJson.T, kotlin.Unit)))misk.feature/wisp.feature.-dynamic-config/track-json.md
+$dokka.location:misk.feature$trackJson(wisp.feature.FeatureFlags, wisp.feature.Feature, kotlin.String, wisp.feature.Attributes, java.util.concurrent.Executor, kotlin.Function1((misk.feature.trackJson.T, kotlin.Unit)))misk.feature/wisp.feature.-feature-flags/track-json.md
+misk.feature

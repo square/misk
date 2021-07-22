@@ -1,0 +1,10 @@
+$dokka.format:gfm
+$dokka.linkExtension:md
+
+com.squareup.protos.test.grpc
+com.squareup.protos.test.parsing
+misk.web.dashboard
+misk.web.metadata
+misk.web.metadata.config
+misk.web.metadata.database
+misk.web.metadata.webaction

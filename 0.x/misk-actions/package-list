@@ -1,0 +1,11 @@
+$dokka.format:gfm
+$dokka.linkExtension:md
+
+misk
+misk.exceptions
+misk.scope
+misk.security.authz
+misk.web
+misk.web.actions
+misk.web.dashboard
+misk.web.interceptors
